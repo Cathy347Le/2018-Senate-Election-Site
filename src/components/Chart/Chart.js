@@ -11,18 +11,19 @@ class Chart extends Component {
     bb.generate({
       bindto: "#chart",
       data: {
+        type: "bar",
         columns: [
-          ["data1", 30, 200, 100, 170, 150, 250],
-          ["data2", 130, 100, 140, 35, 110, 50]
+          ["Democrats", 30, 200, 100, 170, 150, 250],
+          ["Republicans", 130, 100, 140, 35, 110, 50]
         ],
-        types: {
-          data1: "line",
-          data2: "area-spline"
-        },
         colors: {
-          data1: "red",
-          data2: "green"
+          Democrats: "red",
+          Republicans: "green"
         }
+      },
+      size: {
+        width: 300,
+        height: 300
       }
     });
   }
