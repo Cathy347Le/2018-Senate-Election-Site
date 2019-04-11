@@ -1,0 +1,13 @@
+.hoverinfo table {
+  width: 200px;
+}
+
+.hoverinfo th {
+  font-weight: normal;
+  color: gray;
+  font-size: 10px;
+}
+
+.hoverinfo td {
+  font-size: 12px;
+}

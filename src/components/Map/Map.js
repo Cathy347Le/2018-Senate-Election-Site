@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // import topojson from "topojson";
 import Datamap from "datamaps/dist/datamaps.usa.min";
 import ReactDOM from "react-dom";
-// import "./Map.css";
+import "./Map.css";
 
 class DataMap extends Component {
   componentDidMount() {
@@ -15,21 +15,27 @@ class DataMap extends Component {
       element: ReactDOM.findDOMNode(this),
       scope: "usa",
       geographyConfig: {
-        highlightBorderColor: "red",
+        highlightBorderColor: "yellow",
         highlightBorderWidth: 5,
         popupTemplate: (geography, data) =>
           `<div class='hoverinfo'>
           <strong>
           ${geography.properties.name}
           </strong>
-          <table><tr><th>Candidate</th><th>Votes</th><th>Percent</th></tr>
+          <table><tr><th>candidate</th><th>votes</th><th>percent</th></tr>
           <tr><td>
           ${data.demFirst} ${data.demLast}
           </td><td>
-          ${data.demVote}
+          ${data.demPercent}%
           </td><td>
-          ${data.demPercent}
-      </td></tr><tr></table> </div>`
+          ${data.demVote}
+          </td></tr><tr><td>
+          ${data.repFirst} ${data.repLast}
+          </td><td>
+          ${data.repPercent}%
+          </td><td>
+          ${data.repVote}
+          </td></tr></table></div>`
       },
       fills: {
         Republican: "red",
