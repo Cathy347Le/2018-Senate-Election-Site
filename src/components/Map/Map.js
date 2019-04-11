@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import d3 from "d3";
-import topojson from "topojson";
+// import d3 from "d3";
+// import topojson from "topojson";
 import Datamap from "datamaps/dist/datamaps.usa.min";
 import ReactDOM from "react-dom";
 // import "./Map.css";

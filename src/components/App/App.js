@@ -24,18 +24,3 @@ class App extends Component {
 }
 
 export default App;
-
-{
-  /* 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <div className="map-content">
-          <Map />
-        </div>
-      </div>
-    );
-  }
-} */
-}
