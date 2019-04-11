@@ -18,219 +18,60 @@ class DataMap extends Component {
         highlightBorderColor: "red",
         highlightBorderWidth: 5,
         popupTemplate: (geography, data) =>
-          `<div class='hoverinfo'>${
-            geography.properties.name
-          } Electoral Votes: ${data.electoralVotes}`
+          `<div class='hoverinfo'>
+          <strong>
+          ${geography.properties.name}
+          </strong>
+          <table><tr><th>Candidate</th><th>Votes</th><th>Percent</th></tr>
+          <tr><td>
+          ${data.demFirst} ${data.demLast}
+          </td><td>
+          ${data.demVote}
+          </td><td>
+          ${data.demPercent}
+      </td></tr><tr></table> </div>`
       },
       fills: {
-        Republican: "#CC4731",
-        Democrat: "#306596",
-        HeavyDemocrat: "#667FAF",
-        LightDemocrat: "#A9C0DE",
-        HeavyRepublican: "#CA5E5B",
-        LightRepublican: "#EAA9A8",
-        defaultFill: "#EDDC4E"
+        Republican: "red",
+        Democrat: "blue",
+        defaultFill: "lightgray"
       },
       data: {
         AZ: {
-          fillKey: "Republican",
-          electoralVotes: 5
-        },
-        CO: {
-          fillKey: "LightDemocrat",
-          electoralVotes: 5
-        },
-        DE: {
           fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        FL: {
-          fillKey: "UNDECIDED",
-          electoralVotes: 29
-        },
-        GA: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        HI: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        ID: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        IL: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        IN: {
-          fillKey: "Republican",
-          electoralVotes: 11
-        },
-        IA: {
-          fillKey: "LightDemocrat",
-          electoralVotes: 11
-        },
-        KS: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        KY: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        LA: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        MD: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        ME: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        MA: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        MN: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        MI: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        MS: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        MO: {
-          fillKey: "Republican",
-          electoralVotes: 13
-        },
-        MT: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        NC: {
-          fillKey: "LightRepublican",
-          electoralVotes: 32
-        },
-        NE: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        NV: {
-          fillKey: "HeavyDemocrat",
-          electoralVotes: 32
-        },
-        NH: {
-          fillKey: "LightDemocrat",
-          electoralVotes: 32
-        },
-        NJ: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        NY: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        ND: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        NM: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        OH: {
-          fillKey: "UNDECIDED",
-          electoralVotes: 32
-        },
-        OK: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        OR: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        PA: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        RI: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        SC: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        SD: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        TN: {
-          fillKey: "Republican",
-          electoralVotes: 32
+          stateLong: "Arizona",
+          stateShort: "AZ",
+          demFirst: "Kyrsten",
+          demLast: "Sinema",
+          demVote: "1,191,100",
+          demPercent: 50,
+          repFirst: "Martha",
+          repLast: "McSally",
+          repVote: "1,135,200",
+          repPercent: 47.6,
+          othFirst: "Other",
+          othLast: "candidates",
+          othVote: "57,442",
+          othPercent: 2.4,
+          winner: "demCand"
         },
         TX: {
           fillKey: "Republican",
-          electoralVotes: 32
-        },
-        UT: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        WI: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        VA: {
-          fillKey: "LightDemocrat",
-          electoralVotes: 32
-        },
-        VT: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        WA: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        WV: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        WY: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        CA: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        CT: {
-          fillKey: "Democrat",
-          electoralVotes: 32
-        },
-        AK: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        AR: {
-          fillKey: "Republican",
-          electoralVotes: 32
-        },
-        AL: {
-          fillKey: "Republican",
-          electoralVotes: 32
+          stateLong: "Texas",
+          stateShort: "TX",
+          demFirst: "Beto",
+          demLast: "O'Rourke",
+          demVote: "4,045,632",
+          demPercent: 48.3,
+          repFirst: "Ted",
+          repLast: "Cruz",
+          repVote: "4,260,553",
+          repPercent: 50.9,
+          othFirst: "Other",
+          othLast: "candidates",
+          othVote: "65,470",
+          othPercent: 0.8,
+          winner: "repCand"
         }
       }
     });
@@ -244,9 +85,8 @@ class DataMap extends Component {
           margin: "0 auto",
           width: "1120px",
           height: "700px",
-          color: "blue"
+          color: "black"
         }}
-        fill={{ defaultFull: "blue" }}
       />
     );
   }
