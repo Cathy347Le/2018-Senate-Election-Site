@@ -6,6 +6,7 @@ header h2 {
   text-align: center;
   color: blue;
   margin-bottom: 20px;
+  font-family: "Acme", sans-serif;
 }
 
 header p {
