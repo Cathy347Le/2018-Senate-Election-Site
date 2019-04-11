@@ -5,14 +5,18 @@
 header h2 {
   text-align: center;
   color: blue;
+  margin-bottom: 20px;
 }
 
 header p {
   text-align: center;
-  color: red;
+  color: black;
   margin: 0px 200px;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
 }
 
 .CNN-source {
   font-style: italic;
+  color: red;
 }
