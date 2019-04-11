@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "../Header/Header.js";
 import Chart from "../Chart/Chart.js";
 import Map from "../Map/Map.js";
+import StatusBar from "../StatusBar/StatusBar";
 
 class App extends Component {
   render() {
@@ -11,6 +12,9 @@ class App extends Component {
           <Header />
         </header>
         <main>
+          <div className="statusbar-content">
+            <StatusBar />
+          </div>
           <div className="map-content">
             <Map />
           </div>

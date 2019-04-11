@@ -21,3 +21,13 @@ header p {
   font-style: italic;
   color: red;
 }
+
+.statusbar-container {
+  margin-top: 30px;
+}
+
+.statusbar-container h4 {
+  text-align: center;
+  font-size: 15px;
+  color: gray;
+}
