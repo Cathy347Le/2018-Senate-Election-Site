@@ -2,6 +2,7 @@ body {
   margin: 30px 100px;
 }
 
+/* Header component styling */
 header h2 {
   text-align: center;
   color: blue;
@@ -22,6 +23,7 @@ header p {
   color: red;
 }
 
+/* Statusbar component styling */
 .statusbar-container {
   margin-top: 30px;
 }
@@ -30,4 +32,50 @@ header p {
   text-align: center;
   font-size: 15px;
   color: gray;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  margin: 0px 50px;
+}
+
+.flex-container > div {
+  width: 80px;
+  text-align: center;
+}
+
+div .progress-bar-container {
+  width: 90%;
+  margin-top: 50px;
+}
+
+.progress {
+  height: 30%;
+}
+
+.fa-democrat {
+  float: left;
+  color: blue;
+  margin: 0px 8px;
+}
+
+.fa-republican {
+  float: right;
+  color: red;
+  margin: 0px 8px;
+}
+
+.party-seats {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.statusbar-container p,
+.side-container {
+  margin: 0px;
+}
+
+.party {
+  font-size: 13px;
 }
