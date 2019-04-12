@@ -4,12 +4,12 @@ import "billboard.js/dist/billboard.css";
 
 class Chart extends Component {
   componentDidMount() {
-    this._renderChart();
+    this.renderBarChart();
   }
 
-  _renderChart() {
+  renderBarChart() {
     bb.generate({
-      bindto: "#chart",
+      bindto: "#barchart",
       data: {
         columns: [
           ["Democrats", 75, 23, 34, 70],
@@ -36,7 +36,12 @@ class Chart extends Component {
   }
 
   render() {
-    return <div id="chart" />;
+    return (
+      <div className="barchart-container">
+        <h4>Most important issue facing the country</h4>
+        <div id="barchart" />
+      </div>
+    );
   }
 }
 
