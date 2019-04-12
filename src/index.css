@@ -82,6 +82,11 @@ div .progress-bar-container {
 
 /* Graphs component styling */
 
+.graphs-header,
+.article-list-header {
+  font-family: "Acme", sans-serif;
+}
+
 .graphs-header {
   margin-bottom: 30px;
 }
@@ -110,4 +115,46 @@ div .progress-bar-container {
 .card-text {
   font-size: 15px;
   font-family: "Raleway", sans-serif;
+}
+
+/* Footer component styling */
+
+.footer-header {
+  color: #9578e6;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+}
+
+.header-border-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-border-container > div {
+  width: 250px;
+  height: 50px;
+  margin-top: 15px;
+  border-top: 3px double gray;
+}
+.footer-content img {
+  width: 5%;
+  height: 5%;
+}
+
+.footer-content p {
+  margin: 0px 15%;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer-favicons {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer-favicons img {
+  width: 3%;
+  height: auto;
 }
