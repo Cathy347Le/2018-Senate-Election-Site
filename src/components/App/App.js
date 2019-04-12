@@ -5,8 +5,14 @@ import Map from "../Map/Map.js";
 import BarChart from "../BarChart/BarChart.js";
 import PieChart from "../PieChart/PieChart.js";
 import BubbleChart from "../BubbleChart/BubbleChart.js";
+import ArticleList from "../ArticleList/ArticleList.js";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { articles: props.articles };
+  }
+
   render() {
     return (
       <div className="App">
@@ -22,7 +28,7 @@ class App extends Component {
           </div>
           <div className="graphs-content">
             <div className="graphs-row-one">
-              <div className="">
+              <div>
                 <BarChart />
               </div>
               <div>
@@ -34,6 +40,9 @@ class App extends Component {
                 <BubbleChart />
               </div>
             </div>
+          </div>
+          <div className="looking-ahead-content">
+            <ArticleList articles={this.state.articles} />
           </div>
         </main>
       </div>
