@@ -27,6 +27,9 @@ class App extends Component {
             <Map />
           </div>
           <div className="graphs-content">
+            <h3 className="graphs-header component-header">
+              Election at a Glance...
+            </h3>
             <div className="graphs-row-one">
               <div>
                 <BarChart />
