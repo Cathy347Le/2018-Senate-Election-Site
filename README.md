@@ -4,7 +4,6 @@
 
 ![image](https://user-images.githubusercontent.com/46338135/56047010-87c2dd00-5d12-11e9-80a6-cc6eb59a952c.png)
 
-
 ### Installation
 
 The live version is deployed to http://project-5-election-site.surge.sh/ If you prefer to clone down a local version, the steps are
@@ -18,13 +17,14 @@ npm install
 npm start
 ```
 
-### Build With
+### Technologies Used
 
-- React
-- React-Bootstrap
-- Billboards.js
-- DataMaps
-- Site deployed using Surge
+- Front-end framework: React
+- Component Library: React-Bootstrap
+- Chart Library: Billboards.js
+- Map Library: DataMaps
+- Carousel Library: Owl Carousel
+- Deployed: Surge
 
 ### Motivation
 
@@ -42,7 +42,7 @@ This is my final project from my software engineer immersive program at General 
 
 ### Acknowledgments
 
-- Thank you to the creater and maintainer of the data visualization libraries I used - Billboards.js and DataMaps
+- Thank you to the creater and maintainer of the data visualization libraries I used - Billboards.js, DataMaps, Owl Carousel
 - Inspiration for the site and data visualization:
   - Site: https://www.cnn.com/election/2018/results/senate
   - Site: https://www.politico.com/election-results/2018/senate/
