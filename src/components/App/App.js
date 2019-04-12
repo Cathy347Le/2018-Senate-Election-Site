@@ -6,6 +6,7 @@ import BarChart from "../BarChart/BarChart.js";
 import PieChart from "../PieChart/PieChart.js";
 import BubbleChart from "../BubbleChart/BubbleChart.js";
 import ArticleList from "../ArticleList/ArticleList.js";
+import Footer from "../Footer/Footer.js";
 
 class App extends Component {
   constructor(props) {
@@ -48,6 +49,11 @@ class App extends Component {
             <ArticleList articles={this.state.articles} />
           </div>
         </main>
+        <footer>
+          <div className="footer-content">
+            <Footer />
+          </div>
+        </footer>
       </div>
     );
   }
