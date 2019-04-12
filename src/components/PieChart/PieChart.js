@@ -18,11 +18,15 @@ class PieChart extends Component {
           ["Ineligible to vote", 28.6],
           ["Voted other", 2.2]
         ],
-        type: "pie",
-        labels: true
+        type: "pie"
       },
+      legend: { show: false },
       pie: {
-        padding: 2
+        padding: 2,
+        label: {
+          ratio: 1.2,
+          format: (value, ratio, id) => `${id}\n ${(ratio * 100).toFixed(1)}%`
+        }
       },
       size: {
         width: 400,
