@@ -31,6 +31,7 @@ This is my final project from my software engineer immersive program at General 
 - Animation
 - Conditional rendering in the map
 - Add images to the map tooltips
+- Make website mobile responsive
 - Have map render Presidential, Gubernatorial, and House data (Gold plan)
 
 ### Acknowledgments
