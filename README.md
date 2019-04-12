@@ -1,5 +1,8 @@
 # Recreating a 2018 Senate Elections Site
 
+![image](https://user-images.githubusercontent.com/46338135/56046883-3d416080-5d12-11e9-98ca-be30b1ee56fa.png)
+
+
 ### Installation
 
 The live version is deployed to http://project-5-election-site.surge.sh/ If you prefer to clone down a local version, the steps are
