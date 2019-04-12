@@ -82,6 +82,10 @@ div .progress-bar-container {
 
 /* Graphs component styling */
 
+.graphs-header {
+  margin-bottom: 30px;
+}
+
 .graphs-row-one {
   display: flex;
   justify-content: space-evenly;
@@ -91,4 +95,18 @@ div .progress-bar-container {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+/* Article component styling */
+
+.article-list-header {
+  margin-top: 30px;
+}
+
+.flex-container > div {
+  margin: 20px;
+}
+
+.card-text {
+  font-size: 15px;
 }
