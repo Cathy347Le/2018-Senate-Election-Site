@@ -1,4 +1,4 @@
-# Recreating 2018 Senate Elections Website
+# Recreating a 2018 Senate Elections Site
 
 ### Installation
 
