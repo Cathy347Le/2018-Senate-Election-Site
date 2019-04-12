@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App/App";
 import articles from "./senateArticles.json";
-import races from "./senateResultsShort.json";
+import races from "./senateResults.json";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 

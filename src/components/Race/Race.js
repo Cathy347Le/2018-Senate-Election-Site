@@ -17,7 +17,7 @@ class Race extends Component {
   }
   render() {
     // console.log(this.props.race);
-    console.log(this.state.race);
+    // console.log(this.state.race);
     return (
       <table>
         <thead>

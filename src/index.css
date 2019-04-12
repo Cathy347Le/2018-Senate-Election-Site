@@ -80,6 +80,11 @@ div .progress-bar-container {
   font-size: 13px;
 }
 
+.owl-theme .owl-nav {
+  margin-top: 0px;
+  height: 25px;
+}
+
 /* Race carousel component */
 table {
   border-collapse: collapse;

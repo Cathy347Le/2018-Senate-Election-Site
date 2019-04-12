@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import Header from "../Header/Header.js";
 import StatusBar from "../StatusBar/StatusBar";
 import Map from "../Map/Map.js";
-import RaceList from "../RaceList/RaceList.js";
+import Carousel from "../Carousel/Carousel.js";
+// import RaceList from "../RaceList/RaceList.js";
 import BarChart from "../BarChart/BarChart.js";
 import PieChart from "../PieChart/PieChart.js";
 import BubbleChart from "../BubbleChart/BubbleChart.js";
@@ -28,9 +29,12 @@ class App extends Component {
           <div className="map-content">
             <Map />
           </div>
-          <div className="carousel-content">
-            <RaceList races={this.state.races} />
+          <div className="owl-carousel-content">
+            <Carousel races={this.state.races} />
           </div>
+          {/* <div className="carousel-content">
+            <RaceList races={this.state.races} />
+          </div> */}
           <div className="graphs-content">
             <h3 className="graphs-header component-header">
               Election at a Glance...
