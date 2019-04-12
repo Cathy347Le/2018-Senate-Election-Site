@@ -51,7 +51,7 @@ div .progress-bar-container {
 }
 
 .progress {
-  height: 30%;
+  height: 40%;
 }
 
 .fa-democrat {
@@ -80,12 +80,38 @@ div .progress-bar-container {
   font-size: 13px;
 }
 
-/* Graphs component styling */
+/* Race carousel component */
+table {
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+  padding: 10px;
+  width: 150px;
+}
 
+table:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+th span {
+  font-weight: normal;
+}
+
+.header-2 {
+  font-size: 11px;
+  color: gray;
+  font-weight: normal;
+}
+
+td {
+  font-size: 12px;
+}
+
+/* Graphs component styling */
 .graphs-header,
 .article-list-header {
   font-family: "Acme", sans-serif;
   color: #236648;
+  margin-top: 30px;
 }
 
 .graphs-header {
@@ -104,12 +130,7 @@ div .progress-bar-container {
 }
 
 /* Article component styling */
-
-.article-list-header {
-  margin-top: 30px;
-}
-
-.flex-container > div {
+.article-list > div {
   margin: 20px;
 }
 
@@ -119,7 +140,6 @@ div .progress-bar-container {
 }
 
 /* Footer component styling */
-
 .footer-header {
   color: #9578e6;
   text-align: center;

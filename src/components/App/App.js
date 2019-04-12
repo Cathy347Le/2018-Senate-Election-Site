@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "../Header/Header.js";
 import StatusBar from "../StatusBar/StatusBar";
 import Map from "../Map/Map.js";
+import RaceList from "../RaceList/RaceList.js";
 import BarChart from "../BarChart/BarChart.js";
 import PieChart from "../PieChart/PieChart.js";
 import BubbleChart from "../BubbleChart/BubbleChart.js";
@@ -11,7 +12,7 @@ import Footer from "../Footer/Footer.js";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { articles: props.articles };
+    this.state = { articles: props.articles, races: props.races };
   }
 
   render() {
@@ -28,7 +29,7 @@ class App extends Component {
             <Map />
           </div>
           <div className="carousel-content">
-            <RaceCardList races={this.state.races} />
+            <RaceList races={this.state.races} />
           </div>
           <div className="graphs-content">
             <h3 className="graphs-header component-header">
