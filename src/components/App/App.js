@@ -27,6 +27,9 @@ class App extends Component {
           <div className="map-content">
             <Map />
           </div>
+          <div className="carousel-content">
+            <RaceCardList races={this.state.races} />
+          </div>
           <div className="graphs-content">
             <h3 className="graphs-header component-header">
               Election at a Glance...
