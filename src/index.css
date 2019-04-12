@@ -79,3 +79,16 @@ div .progress-bar-container {
 .party {
   font-size: 13px;
 }
+
+/* Graphs component styling */
+
+.graphs-row-one {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.graphs-row-two {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}

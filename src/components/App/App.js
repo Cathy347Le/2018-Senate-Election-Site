@@ -21,9 +21,19 @@ class App extends Component {
             <Map />
           </div>
           <div className="graphs-content">
-            <BarChart />
-            <PieChart />
-            <BubbleChart />
+            <div className="graphs-row-one">
+              <div className="">
+                <BarChart />
+              </div>
+              <div>
+                <PieChart />
+              </div>
+            </div>
+            <div className="graphs-row-two">
+              <div>
+                <BubbleChart />
+              </div>
+            </div>
           </div>
         </main>
       </div>

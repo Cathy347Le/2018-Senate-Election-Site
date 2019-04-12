@@ -46,7 +46,7 @@ class BubbleChart extends Component {
         }
       },
       size: {
-        width: 800,
+        width: 750,
         height: 400
       }
     });

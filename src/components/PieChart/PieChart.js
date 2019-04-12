@@ -23,6 +23,10 @@ class PieChart extends Component {
       },
       pie: {
         padding: 2
+      },
+      size: {
+        width: 400,
+        height: 400
       }
     });
   }
