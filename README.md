@@ -19,6 +19,7 @@ npm start
 - React-Bootstrap
 - Billboards.js
 - DataMaps
+- Site deployed using Surge
 
 ### Motivation
 
