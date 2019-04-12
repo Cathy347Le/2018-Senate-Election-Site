@@ -11,19 +11,26 @@ class Chart extends Component {
     bb.generate({
       bindto: "#chart",
       data: {
-        type: "bar",
         columns: [
-          ["Democrats", 30, 200, 100, 170, 150, 250],
-          ["Republicans", 130, 100, 140, 35, 110, 50]
+          ["Democrats", 75, 23, 34, 70],
+          ["Republicans", 23, 75, 63, 29]
         ],
+        type: "bar",
+        labels: true,
         colors: {
-          Democrats: "red",
-          Republicans: "green"
+          Democrats: "blue",
+          Republicans: "red"
+        }
+      },
+      axis: {
+        x: {
+          type: "category",
+          categories: ["Health care", "Immigration", "Economy", "Gun policy"]
         }
       },
       size: {
-        width: 300,
-        height: 300
+        width: 400,
+        height: 400
       }
     });
   }
