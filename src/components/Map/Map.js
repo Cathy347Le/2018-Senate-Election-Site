@@ -5,6 +5,7 @@ import Datamap from "datamaps/dist/datamaps.usa.min";
 import ReactDOM from "react-dom";
 import "./Map.css";
 import MapSenateData from "./senateData.json";
+import NoSenateRace from "./noSenData.json";
 
 class DataMap extends Component {
   componentDidMount() {
@@ -16,8 +17,10 @@ class DataMap extends Component {
       element: ReactDOM.findDOMNode(this),
       scope: "usa",
       geographyConfig: {
+        highlightOnHover: true,
         highlightBorderColor: "yellow",
-        highlightBorderWidth: 2,
+        highlightBorderWidth: 4,
+        highlightFillColor: false,
         popupTemplate: (geography, data) =>
           `<div class='hoverinfo'>
           <strong>
