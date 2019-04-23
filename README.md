@@ -28,7 +28,7 @@ npm start
 
 ### Motivation
 
-This is my final project from my software engineer immersive program at General Assembly. I wanted to learn something new and take a stab about D3 and SVGs. As a Data Analyst at a polling and consulting firm, my job was to process and manipulate survey data. I wanted to embrace my former career and learn to built dynamic, interactive data visualizations on websites.
+This is my final project from my software engineer immersive program at General Assembly. I wanted to learn something new and take a stab about D3 and SVGs. As a Data Analyst at a polling and consulting firm, my job was to process and manipulate survey data. I wanted to embrace my former career and learn how to built dynamic, interactive data visualizations.
 
 ### Features to add
 
