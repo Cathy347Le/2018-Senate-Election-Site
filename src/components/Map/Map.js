@@ -19,10 +19,11 @@ class DataMap extends Component {
       geographyConfig: {
         highlightOnHover: true,
         highlightBorderColor: "yellow",
-        highlightBorderWidth: 4,
+        highlightBorderWidth: 3,
         highlightFillColor: false,
         popupTemplate: (geography, data) =>
-          `<div class='hoverinfo'>
+          data != undefined
+            ? `<div class='hoverinfo'>
           <strong>
           ${geography.properties.name} SENATE
           </strong>
@@ -40,6 +41,10 @@ class DataMap extends Component {
           </td><td>
           ${data.repVote}
           </td></tr></table></div>`
+            : `<div class='hoverinfo'>
+          <strong> There was no U.S. Senate race in
+          ${geography.properties.name}
+          </strong></div>`
       },
       fills: {
         Republican: "red",
@@ -47,7 +52,8 @@ class DataMap extends Component {
         Independent: "#8A2BE2",
         defaultFill: "lightgray"
       },
-      data: MapSenateData
+      data: MapSenateData,
+      nodata: NoSenateRace
     });
   }
   render() {
