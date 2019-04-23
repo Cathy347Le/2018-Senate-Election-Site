@@ -33,9 +33,7 @@ This is my final project from my software engineer immersive program at General 
 ### Features to add
 
 - Learn about React prop types
-- Carousel to show the races in a table
 - Animation
-- Conditional rendering in the map
 - Add images to the map tooltips
 - Make website mobile responsive
 - Have map render Presidential, Gubernatorial, and House data (Gold plan)
