@@ -21,7 +21,7 @@ class DataMap extends Component {
         popupTemplate: (geography, data) =>
           `<div class='hoverinfo'>
           <strong>
-          ${geography.properties.name}
+          ${geography.properties.name} SENATE
           </strong>
           <table><tr><th>candidate</th><th>votes</th><th>percent</th></tr>
           <tr><td>

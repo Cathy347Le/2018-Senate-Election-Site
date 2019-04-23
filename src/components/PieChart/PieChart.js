@@ -38,7 +38,7 @@ class PieChart extends Component {
   render() {
     return (
       <div className="piechart-container">
-        <h4>How America participated in the election</h4>
+        <h4>How America participated in the 2018 election</h4>
         <div id="piechart" />
       </div>
     );
